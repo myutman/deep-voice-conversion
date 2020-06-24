@@ -1,8 +1,8 @@
-tensorflow-gpu >= 1.8
+tensorflow-gpu == 1.14.0
 numpy >= 1.11.1
 librosa == 0.5.1
 joblib == 0.11.0
-tensorpack >= 0.8.6
+tensorpack == 0.9.0.1
 pyyaml
 soundfile
 pydub

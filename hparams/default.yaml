@@ -29,7 +29,7 @@ logdir_path: '/data/private/vc/logdir'
 
 train1:
     # path
-    data_path: '/data/private/vc/datasets/timit/TIMIT/TRAIN/*/*/*.wav'
+    data_path: '/data/private/vc/datasets/timit/TIMIT/TRAIN/*/*/*.WAV'
 
     # model
     hidden_units: 128  # alias: E

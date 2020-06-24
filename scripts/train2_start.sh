@@ -19,5 +19,5 @@ if [ ! -d "out" ]
     mkdir out
 fi
 
-CUDA_VISIBLE_DEVICES=$gpu nohup python train2.py $case1 $case2 >> out/$case2.out &
+CUDA_VISIBLE_DEVICES=$gpu nohup python3 train2.py $case1 $case2 >> out/$case2.out &
 tail -f out/$case2.out

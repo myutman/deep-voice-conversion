@@ -13,7 +13,7 @@ mol/lj:
 ---
 mol/lj/2:
   train2:
-    data_path: '/data/public/rw/LJSpeech-1.0_processed/*.wav'
+    data_path: '/home/ubuntu/deep-voice-conversion/datasets/arctic/bdl/*.wav'
     hidden_units: 512  # alias: E
     num_banks: 8
     num_highway_blocks: 16
