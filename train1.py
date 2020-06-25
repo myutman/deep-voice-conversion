@@ -57,6 +57,7 @@ def train(args, logdir):
         train_conf.nr_tower = len(args.gpu.split(','))
 
     trainer = SimpleTrainer()
+    #trainer = SyncMultiGPUTrainerReplicated(hp.train1.num_gpu)
 
     launch_train_with_config(train_conf, trainer=trainer)
 

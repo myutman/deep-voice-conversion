@@ -29,7 +29,7 @@ logdir_path: '/data/private/vc/logdir'
 
 train1:
     # path
-    data_path: '/data/private/vc/datasets/timit/TIMIT/TRAIN/*/*/*.WAV'
+    data_path: '/data/private/vc/datasets/timit/TIMIT/TRAIN/*/*/*.wav'
 
     # model
     hidden_units: 128  # alias: E
@@ -45,7 +45,7 @@ train1:
     num_epochs: 1000
     steps_per_epoch: 100
     save_per_epoch: 2
-    num_gpu: 2
+    num_gpu: 1
 ---
 train2:
     # path
