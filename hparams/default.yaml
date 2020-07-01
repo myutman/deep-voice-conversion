@@ -49,7 +49,8 @@ train1:
 ---
 train2:
     # path
-    data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
+    data_path: '/data/private/vc/datasets/trump_speeches/trump_speech_10*/*.wav'
+    #data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
 
     # model
     hidden_units: 256  # alias: E
@@ -76,20 +77,22 @@ train2:
 test1:
     # path
     data_path: '/data/private/vc/datasets/timit/TIMIT/TEST/*/*/*.wav'
-
+    
     # test
     batch_size: 32
 ---
 test2:
     # path
-    data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
+    data_path: '/data/private/vc/datasets/trump_speeches/trump_speech_*/*.wav'
+    #data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
 
     # test
     batch_size: 32
 ---
 convert:
     # path
-    data_path: '/data/private/vc/datasets/arctic/bdl/*.wav'
+    #data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
+    data_path: '/data/private/vc/datasets/test_voice/*.wav'
 
     # convert
     one_full_wav: False

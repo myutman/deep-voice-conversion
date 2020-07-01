@@ -120,6 +120,10 @@ def get_mfccs_and_spectrogram(wav_file, trim=True, random_crop=False):
     # Load
     wav, _ = librosa.load(wav_file, sr=hp.default.sr)
 
+    return get_mfccs_and_spectrogram_directly(wav, trim, random_crop)
+
+
+def get_mfccs_and_spectrogram_directly(wav, trim=True, random_crop=False):
     # Trim
     if trim:
         wav, _ = librosa.effects.trim(wav, frame_length=hp.default.win_length, hop_length=hp.default.hop_length)

@@ -41,7 +41,7 @@ from tensorpack.callbacks.base import Callback
 #             # tf.summary.audio('B', audio, hp.default.sr, max_outputs=hp.convert.batch_size)
 
 
-def convert(predictor, df, pred_spec, y_spec, ppgs):
+def convert(pred_spec, y_spec, ppgs):
     #pred_spec, y_spec, ppgs = predictor(next(df().get_data()))
 
     # Denormalizatoin
