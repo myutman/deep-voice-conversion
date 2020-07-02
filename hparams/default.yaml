@@ -49,7 +49,8 @@ train1:
 ---
 train2:
     # path
-    data_path: '/data/private/vc/datasets/trump_speeches/trump_speech_10*/*.wav'
+    data_path: '/data/private/vc/datasets/musk_speeches/musk_speech_10*/*.wav'
+    #data_path: '/data/private/vc/datasets/trump_speeches/trump_speech_10*/*.wav'
     #data_path: '/data/private/vc/datasets/arctic/slt/*.wav'
 
     # model
